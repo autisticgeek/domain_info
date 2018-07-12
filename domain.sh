@@ -9,12 +9,12 @@
 
 
 if [ $# -eq 0 ]; then
-    echo
+    echo 
     echo "Usage: domain.sh URL"
     echo "You can create your on alias in ~/.bashrc or"
     echo "~/.bash_profile to get to the script quickly"
-    echo
-    exit 1>
+    echo 
+    exit 1
 fi
 
 clear
@@ -27,7 +27,7 @@ echo>++++++++++++++++++++++++++++
 echo>++++++++++++++++++++++++++++
 echo>++++++++++++++++++++++++++++
 echo>++++++++++++++++++++++++++++
-echo>
+echo
 echo ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 echo "++++ dig $DOMAIN ++++"
 /usr/bin/dig $DOMAIN any | grep -v "HINFO"
